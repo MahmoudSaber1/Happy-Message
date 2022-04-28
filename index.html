@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+            The above 3 meta tags *must* come first in the head; 
+            any other head content must come *after* these tags 
+            -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Welcome to the appropriate message site The site was created in order for you to send a congratulatory
+                message to one of your relatives or colleagues on all occasions,
+                whether birthdays or public occasions"
+    />
+    <meta name="author" content="Mahmoud Saber & Youssef Elsadany" />
+    <!-- Title -->
+    <title>Appropriate Message</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/gift-box.png" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!---- Iconscout CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar Section -->
+    <section class="nav">
+      <nav class="container">
+        <div class="logo">
+          <h1>Appropriate Message</h1>
+        </div>
+        <ul class="links">
+          <li class="users" id="OpenAsk">
+            <i class="fas fa-user"></i>
+          </li>
+          <div class="PopupAsk">
+            <button id="opLogin" class="login">Login</button>
+            <button id="opSign" class="sign">Signup</button>
+          </div>
+          <div class="lang">
+            <img src="./images/united-states.png" alt="en" />
+            <img src="./images/egypt.png" alt="en" />
+          </div>
+        </ul>
+      </nav>
+    </section>
+    <!-- End Navbar Section -->
+
+    <!-- Start Popup Form Login & Sign -->
+    <div class="popup-form">
+      <div class="form">
+        <div class="bluBg">
+          <div class="box signin">
+            <h2>Already Have An Account ?</h2>
+            <button class="signinBtn">Login</button>
+          </div>
+          <div class="box signup">
+            <h2>Don't Have An Account ?</h2>
+            <button class="signupBtn">Sign Up</button>
+          </div>
+        </div>
+        <div class="close">
+          <i class="far fa-times-circle"></i>
+        </div>
+        <div class="formBx">
+          <div class="signinForm info">
+            <form class="form-group" action="./Pages/dashboardNew.html">
+              <h3>Login</h3>
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Username Or Email"
+              />
+              <input
+                type="password"
+                class="form-control mb-5"
+                name="password"
+                placeholder="Your Password"
+              />
+              <input type="submit" value="Login" />
+              <a href="forget.php" style="color: #fff">Forget Password ?</a>
+            </form>
+          </div>
+
+          <div class="signupForm info">
+            <form method="post" class="form-group">
+              <h3>Signup</h3>
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Enter Your Username"
+                required
+              />
+              <input
+                type="email"
+                class="form-control mb-3"
+                placeholder="Enter Your Email"
+                required
+              />
+              <input
+                type="password"
+                class="form-control mb-3"
+                name="password"
+                placeholder="Your Password"
+                required
+              />
+              <input
+                type="password"
+                class="form-control mb-5"
+                name="Conpassword"
+                placeholder="Confirm Password"
+                required
+              />
+              <input type="submit" value="Signup" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Popup Form Login & Sign -->
+
+    <!-- Start Home Section -->
+    <section class="home">
+      <div class="container">
+        <div class="head">
+          <h1>Welcome to the appropriate message site</h1>
+          <p>
+            The site was created in order for you to send a congratulatory
+            message to one of your relatives or colleagues on all occasions,
+            whether birthdays or public occasions
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- Toggle Them Start - light and Dark -->
+    <div class="toggle-them">
+      <i class="fas"></i>
+    </div>
+    <!-- Toggle Them End - light and Dark -->
+
+    <!-- jQuery -->
+    <script src="./js/jQuery.3.5.1.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Custome Js File -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
