@@ -34,6 +34,57 @@
     />
   </head>
   <body>
+    <!-- Start Navbar Section -->
+    <div class="newAcc">
+      <button id="opSign" class="sign">تسجيل حساب جديد</button>
+    </div>
+
+    <!-- End Navbar Section -->
+
+    <!-- Start Popup Form Login & Sign -->
+    <div class="popup-form new-user">
+      <div class="form">
+        <div class="close">
+          <i class="far fa-times-circle"></i>
+        </div>
+        <div class="formBx">
+          <div class="signupForm info">
+            <form method="post" class="form-group">
+              <h3>Signup</h3>
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Enter Your Username"
+                required
+              />
+              <input
+                type="email"
+                class="form-control mb-3"
+                placeholder="Enter Your Email"
+                required
+              />
+              <input
+                type="password"
+                class="form-control mb-3"
+                name="password"
+                placeholder="Your Password"
+                required
+              />
+              <input
+                type="password"
+                class="form-control mb-5"
+                name="Conpassword"
+                placeholder="Confirm Password"
+                required
+              />
+              <input type="submit" value="Signup" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Popup Form Login & Sign -->
+
     <div class="message">
       <div class="wrapper-container">
         <div class="wrapper">
@@ -56,6 +107,22 @@
       </div>
     </div>
 
+    <footer>
+      <div class="contnet">
+        <h3>all right reserved &copy; Happy Messages</h3>
+        <div class="creator">
+          <h4>
+            <span>Designed by</span>
+            <span>
+              <a href="https://www.facebook.com/RogarIQ147" target="_blank">
+                Mahmoud Saber
+              </a>
+            </span>
+          </h4>
+        </div>
+      </div>
+    </footer>
+
     <!-- Toggle Them Start - light and Dark -->
     <div class="toggle-them">
       <i class="fas"></i>
@@ -66,10 +133,48 @@
     <script src="../js/jQuery.3.5.1.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
       AOS.init();
     </script>
     <!-- Custome Js File -->
     <script src="../js/main.js"></script>
+    <script>
+      var count = 800;
+      var defaults = {
+        origin: { y: 0.7 },
+      };
+
+      function fire(particleRatio, opts) {
+        confetti(
+          Object.assign({}, defaults, opts, {
+            particleCount: Math.floor(count * particleRatio),
+          })
+        );
+      }
+
+      fire(0.25, {
+        spread: 26,
+        startVelocity: 55,
+      });
+      fire(0.2, {
+        spread: 60,
+      });
+      fire(0.35, {
+        spread: 100,
+        decay: 0.91,
+        scalar: 0.8,
+      });
+      fire(0.1, {
+        spread: 120,
+        startVelocity: 25,
+        decay: 0.92,
+        scalar: 1.2,
+      });
+      fire(0.1, {
+        spread: 120,
+        startVelocity: 45,
+      });
+    </script>
   </body>
 </html>

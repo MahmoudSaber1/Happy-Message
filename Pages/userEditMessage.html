@@ -108,57 +108,82 @@
             >
           </div>
 
-          <div class="edit-form">
-            <div
-              class="container"
-              data-aos="fade-left"
+          <div>
+            <form
+              class="edit-form"
+              action="#"
+              data-aos="fade-right"
               data-aos-duration="1100"
             >
-              <div class="wrapper-form">
-                <div class="images">
-                  <img src="" alt="" />
-                </div>
-                <div class="content">
-                  <div class="icon">
-                    <i class="fas fa-cloud-upload-alt"></i>
+              <div
+                class="container"
+                data-aos="fade-left"
+                data-aos-duration="1100"
+              >
+                <div class="wrapper-form">
+                  <div class="images">
+                    <img src="" alt="" />
                   </div>
-                  <div class="text">No file chosen, yet!</div>
+                  <div class="content">
+                    <div class="icon">
+                      <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="text">No file chosen, yet!</div>
+                  </div>
+                  <div id="cancel-btn">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="file-name">File name here</div>
                 </div>
-                <div id="cancel-btn">
-                  <i class="fas fa-times"></i>
+                <input id="default-btn" type="file" hidden />
+              </div>
+              <div class="box-container">
+                <div class="box">
+                  <i class="uil uil-user-check"></i>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Sender's name"
+                    value="Mahmoud Saber"
+                  />
                 </div>
-                <div class="file-name">File name here</div>
-              </div>
-              <button onclick="defaultBtnActive()" id="custom-btn">
-                Choose a file
-              </button>
-              <input id="default-btn" type="file" hidden />
-            </div>
-            <form action="#" data-aos="fade-right" data-aos-duration="1100">
-              <div class="box">
-                <i class="uil uil-user-check"></i>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Sender's name"
-                  value="Mahmoud Saber"
-                />
-              </div>
-              <div class="box">
-                <i class="uil uil-envelope"></i>
-                <textarea
-                  name="message"
-                  placeholder="Type Your Message"
-                >Every year and you are good and a happy year to you and may God bring us back these days with good </textarea>
-              </div>
-              <div class="box">
-                <input type="submit" value="Edit Message" />
+                <div class="box">
+                  <i class="uil uil-envelope"></i>
+                  <textarea name="message" placeholder="Type Your Message">
+                Every year and you are good and a happy year to you and may God bring us back these days with good </textarea
+                  >
+                </div>
+                <div class="box">
+                  <i class="uli uil-file-import"></i>
+                  <button onclick="defaultBtnActive()" id="custom-btn">
+                    Choose a file
+                  </button>
+                </div>
+                <div class="box">
+                  <input type="submit" value="Edit Message" />
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
+
+      <footer>
+        <div class="contnet">
+          <h3>all right reserved &copy; Happy Messages</h3>
+          <div class="creator">
+            <h4>
+              <span>Designed by</span>
+              <span>
+                <a href="https://www.facebook.com/RogarIQ147" target="_blank">
+                  Mahmoud Saber
+                </a>
+              </span>
+            </h4>
+          </div>
+        </div>
+      </footer>
     </section>
 
     <!-- Toggle Them Start - light and Dark -->
