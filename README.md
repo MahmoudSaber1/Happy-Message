@@ -10,9 +10,13 @@
 
 ## Screenshot
 
-![preview](https://user-images.githubusercontent.com/67934444/167198350-6e9d7e1f-ce97-44e1-8e61-0923d5204dbb.png)
+![happy-message](https://user-images.githubusercontent.com/67934444/168439096-00b13e6c-8ba4-4253-8e86-a162780c58f9.png)
 
-### 🏠 [Live-Demo](https://holux-clone.netlify.app/)
+## Performance
+
+![gtmetrix com-LatestPerformanceReportforhttpshappy-message netlify appGTmetrix](https://user-images.githubusercontent.com/67934444/168439236-8b603172-2b76-4349-a7d4-8f44f76bdb4b.png)
+
+### 🏠 [Live-Demo](https://happy-message.netlify.app/)
 
 ## Usage
 
