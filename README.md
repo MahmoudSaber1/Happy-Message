@@ -18,10 +18,12 @@
 
 ### 🏠 [Live-Demo](https://happy-message.netlify.app/)
 
-## Usage
+## Technology Used
 
 ```sh
-Open URL
+- HTML
+- CSS
+- JS
 ```
 
 ## Author
